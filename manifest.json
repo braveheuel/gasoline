@@ -1,0 +1,9 @@
+{
+  "domain": "gasoline",
+  "name": "Tankstellenpreise",
+  "documentation": "https://github.com/braveheuel/gasoline",
+  "dependencies": [],
+  "codeowners": ["@braveheuel"],
+  "iot_class": "cloud_polling",
+  "version": "0.1"
+}
