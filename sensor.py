@@ -116,7 +116,7 @@ class GasolineData(object):
         resp = None
         try:
             websession = async_get_clientsession(self._hass)
-            with async_timeout.timeout(40, loop=self._hass.loop):
+            with async_timeout.timeout(40):
                 resp = yield from websession.get(station_url)
             if resp.status != 200:
                 _LOGGER.warning("Error fetching {} with response status {}!".format(station_url, resp.status))
